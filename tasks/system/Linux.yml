@@ -42,6 +42,7 @@
         dest: "{{ jboss_path }}"
         mode: "0755"
         list_files: True
+        keep_newer: yes
       register: jboss_release
 
   become: True
